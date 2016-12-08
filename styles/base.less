@@ -90,12 +90,15 @@ atom-text-editor.is-focused .line.cursor-line,
     color: rgba(196, 122, 245, 1);
 }
 .variable {
-    color: #C47AF5;
+    color: #F77669;
+    &.other.property.js {
+        color: #BDF669;
+    }
+    &.parameter.function {
+        color: #ffcb6b;
+    }
 }
-.entity.name.function,
 .meta.require,
-.support.function.any-method,
-.support.function,
 .keyword.other.special-method,
 .meta.block-level,
 .meta.function-call.method.with-arguments .variable.function,
@@ -106,10 +109,10 @@ atom-text-editor.is-focused .line.cursor-line,
 .entity.name.class,
 .entity.name.type.class,
 .variable.language.this.js {
-    color: #BDF669;
+    color: #C47AF5;
 }
 .meta.class {
-    color: #BDF669;
+    color: #C47AF5;
 }
 .keyword.other.special-method {
     color: #82B1FF;
@@ -117,7 +120,9 @@ atom-text-editor.is-focused .line.cursor-line,
 .storage {
     color: rgba(246, 241, 220, 1);
 }
+.entity.name.function,
 .support.function,
+.support.function.any-method,
 .keyword.operator,
 .constant.other.color,
 .meta.tag,
